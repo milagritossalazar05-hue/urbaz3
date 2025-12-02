@@ -1,0 +1,295 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAZ • Tienda Oversize Interactiva</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- MENÚ -->
+   <div class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#sobrenosotros">Sobre nosotros</a>
+    <a href="#hombre">Hombre</a>
+    <a href="#mujer">Mujer</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#carrito" class="carrito-btn">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+</div>
+
+
+   <!-- ======================= INICIO ======================= -->
+<section id="inicio">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">URBAZ STREETWEAR</h1>
+        <p class="hero-desc">Moda Oversize moderna, urbana y con estilo único.</p>
+        <a href="#sobrenosotros" class="btn">Conócenos</a>
+    </div>
+</section>
+
+
+
+<!-- =================== SOBRE NOSOTROS ==================== -->
+<section id="sobrenosotros">
+
+    <h1>¿Quiénes Somos?</h1>
+
+    <div class="card">
+        <h2>PROPUESTA DE VALOR</h2>
+        <p>
+            URBAZ ofrece prendas oversize diseñadas para jóvenes que buscan 
+            comodidad, estilo y autenticidad. No se trata solo de ropa,
+            sino de una forma de expresarse sin etiquetas.
+            Cada prenda combina diseño moderno, tallas inclusivas 
+            y una experiencia de compra digital sencilla.
+        </p>
+    </div>
+
+    <h1>Público Objetivo</h1>
+
+    <div class="card">
+        <h2>Jóvenes de 18 a 30 años</h2>
+        <p>
+            Conectados con la moda urbana y las redes sociales, que valoran la diversidad
+            corporal y la identidad personal.
+        </p>
+    </div>
+
+    <!-- NAV interno entre secciones -->
+    <nav class="nav-section">
+        <a href="#inicio">Anterior</a>
+        <a href="#hombre">Siguiente</a>
+    </nav>
+
+</section>
+
+<!-- ---------------- SECCIÓN HOMBRE ---------------- --> 
+<section id="hombre" class="estampados-section">
+
+    <h2 class="categoria-titulo">HOMBRE</h2>
+
+    <div class="grid-estampados">
+
+        <div class="item">
+            <img src="img/goku.jpg" alt="Oversize Goku">
+            <p>Oversize Goku</p>
+            <span>S/. 50.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Goku', 50.00, 'img/goku.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/3.jpg" alt="Oversize urbana">
+            <p>Oversize urbana</p>
+            <span>S/. 45.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize urbana', 45.00, 'img/3.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/marron.jpg" alt="Oversize marron">
+            <p>Oversize Marron</p>
+            <span>S/. 60.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Marron', 60.00, 'img/marron.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/azul.jpg" alt="Oversize Street">
+            <p>Oversize Street</p>
+            <span>S/. 70.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Street', 70.00, 'img/azul.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/rojo.jpg" alt="Oversize Street">
+            <p>Oversize Street</p>
+            <span>S/. 45.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Street', 45.00, 'img/rojo.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/red.jpg" alt="Oversize Street">
+            <p>Oversize Street</p>
+            <span>S/. 50.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Street', 50.00, 'img/red.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/celeste.jpg" alt="Oversize Street">
+            <p>Oversize Street</p>
+            <span>S/. 60.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Street', 60.00, 'img/celeste.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/Unisex Anime Print T-Shirt 3.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 45.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 45.00, 'img/Unisex Anime Print T-Shirt 3.jpg')">Agregar al carrito</button>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="#sobrenosotros">Anterior</a>
+        <a href="#mujer">Siguiente</a>
+    </nav>
+
+</section>
+
+
+<!-- ---------------- SECCIÓN MUJER ---------------- --> 
+<section id="mujer" class="estampados-section">
+
+    <h2 class="categoria-titulo">MUJER</h2>
+
+    <div class="grid-estampados">
+
+        <div class="item">
+            <img src="img/2.1.jpg" alt="Oversize Urban">
+            <p>Oversize Urban</p>
+            <span>S/. 40.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Urban', 40.00, 'img/2.1.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/negro-rosa.jpg" alt="Oversize Casual">
+            <p>Oversize Casual</p>
+            <span>S/. 50.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Casual', 50.00, 'img/negro-rosa.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/blanco.jpg" alt="Oversize Graphic">
+            <p>Oversize Graphic</p>
+            <span>S/. 55.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Graphic', 55.00, 'img/blanco.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/Butterfly And Slogan Graphic Drop Shoulder Oversized Tee.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 60.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 60.00, 'img/Butterfly And Slogan Graphic Drop Shoulder Oversized Tee.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/rosado.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 45.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 45.00, 'img/rosado.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/34.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 70.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 70.00, 'img/34.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/cels.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 60.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 60.00, 'img/cels.jpg')">Agregar al carrito</button>
+        </div>
+
+        <div class="item">
+            <img src="img/cazzu.jpg" alt="Oversize Anime">
+            <p>Oversize Anime</p>
+            <span>S/. 50.00</span>
+            <button class="btn-add" onclick="agregarAlCarrito('Oversize Anime', 50.00, 'img/cazzu.jpg')">Agregar al carrito</button>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="#hombre">Anterior</a>
+        <a href="#contacto">Siguiente</a>
+    </nav>
+
+</section>
+
+<!-- =================== CARRITO DE COMPRAS ==================== -->
+<section id="carrito" class="estampados-section">
+
+    <h2 class="categoria-titulo">🛒 MI CARRITO</h2>
+
+    <div id="lista-carrito">
+        <!-- Los productos se agregarán aquí dinámicamente -->
+    </div>
+
+    <div class="carrito-total">
+        <h3>Total: S/. <span id="total-carrito">0.00</span></h3>
+        <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </div>
+
+    <nav>
+        <a href="#mujer">Anterior</a>
+        <a href="#contacto">Siguiente</a>
+    </nav>
+
+</section>
+
+    <!-- Contacto -->
+<section id="contacto">
+
+    <div class="contacto-grid">
+
+        <!-- Formulario -->
+        <div class="contact-box">
+            <h2>CONTÁCTANOS</h2>
+
+            <input type="text" placeholder="Nombre completo">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="text" placeholder="Asunto">
+            <textarea placeholder="Mensaje"></textarea>
+
+            <button>Enviar Mensaje</button>
+        </div>
+
+        <!-- Imagen -->
+        <div class="contact-img">
+            <img src="img/ASOS DESIGN.jpg">
+        </div>
+
+    </div>
+
+    <!-- Información -->
+    <div class="info-contacto">
+        <h3>Información de Contacto</h3>
+
+        <div class="info-item"><i class="fas fa-map-marker-alt"></i> 📍Dirección: Lima, Perú</div>
+        <div class="info-item"><i class="fas fa-phone"></i> 📞Teléfono: +51 999 999 999</div>
+        <div class="info-item"><i class="fas fa-envelope"></i> 📧Correo: urbazstore@gmail.com</div>
+        <div class="info-item"><i class="fas fa-clock"></i> 📅Horario: Lunes a Sábado – 9:00 a 18:00</div>
+    </div>
+
+    <!-- Pie dorado -->
+    <div class="footer-dorado">
+        <div class="footer-grid">
+
+            <div class="footer-info">
+                <h2>URBAZ</h2>
+                <p>Tienda Oversize Internacional</p>
+            </div>
+
+            <div class="footer-social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+
+        </div>
+    </div>
+<!-- NAV interno entre secciones --> 
+ <nav class="nav-section"> 
+    <a href="#carrito">Anterior</a> 
+    <a href="#inicio">Inicio</a>
+ </nav> 
+</section>
+
+<script src="js/carrito.js"></script>
+</body>
+</html>
